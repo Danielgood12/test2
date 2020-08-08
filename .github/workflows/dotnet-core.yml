@@ -28,13 +28,10 @@ jobs:
       run: dotnet publish test2.csproj --configuration Release
     # Publish the website
     - name: GitHub Pages action
-      if: ${{ github.ref == 'refs/heads/master' }} # Publish only when the push is on master
+      
       uses: peaceiris/actions-gh-pages@v3.6.4
       with:
             github_token: ${{ secrets.PUBLISH_TOKEN }}
-            publish_branch: gh-pages
-            publish_dir: ./bin/Release/netstandard3.1/publish
-            allow_empty_commit: false
-            keep_files: false
+            publish_branch: master
             force_orphan: true
     
