@@ -25,9 +25,4 @@ jobs:
      
     - name: Publish with dotnet
       run: dotnet publish --configuration Release --output build
-    - name: GitHub Pages
-      uses: crazy-max/ghaction-github-pages@v2.1.2
-      with:
-        name: Danielgood12
-        email: t105360709@ntut.org.tw 
-      
+    
