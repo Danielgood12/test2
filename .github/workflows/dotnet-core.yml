@@ -21,5 +21,4 @@ jobs:
      
     - name: Build
       run: dotnet build --configuration Release --no-restore
-    - name: Run with dotnet
-      run: dotnet run
+    
